@@ -1,10 +1,8 @@
-
+import "./globals.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Link from "next/link";
-import { Search } from "lucide-react";
-import Header from "./components/Header";
+import Header from "@/components/Header";
+import Marquee from "@/components/Marquee";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,11 +25,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+  <body className="antialiased">
 
-        <Header />
-        {children}
-      </body>
-    </html>
+      <Header />
+      <Marquee />
+    <main className="">
+      {children}
+    </main>
+
+  </body>
+</html>
+
+
   );
 }
