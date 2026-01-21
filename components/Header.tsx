@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <header className="w-full bg-[#2060d3]">
             {/* Top Bar */}
-            <div className="mx-auto flex justify-between items-center h-[64px] !px-4 md:!px-8 lg:!px-20 lg:justify-evenly lg:justify-between lg:gap-4">
+            <div className="mx-auto flex justify-between items-center h-[64px] !px-4 md:!px-8 lg:!px-16 lg:justify-center lg:gap-6">
 
                 {/* Logo */}
                 <Link href="/">

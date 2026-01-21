@@ -19,6 +19,7 @@
     "@radix-ui/react-slot": "^1.2.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.6.0",
     "flowbite": "^4.0.1",
     "lucide-react": "^0.562.0",
     "next": "16.1.1",
@@ -26,6 +27,7 @@
     "react-dom": "19.2.3",
     "react-icons": "^5.5.0",
     "styled-components": "^6.3.6",
+    "swiper": "^12.0.3",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {

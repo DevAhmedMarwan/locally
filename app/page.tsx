@@ -1,8 +1,12 @@
+import Carousel from "@/components/Carousel";
 const HomePage = () => {
   return (
-    <div className='text-red-700'>
-      ahmed
-    </div>
+    <>
+    <Carousel />
+    <div className="max-w-7xl mx-auto !px-4 sm:!px-6 lg:!px-8 !py-2 sm:!py-3 lg:!py-4">
+      </div>
+      </div>
+    </>
   );
 };
 
