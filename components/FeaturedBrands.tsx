@@ -82,7 +82,7 @@ const FeaturedBrands = ({ Clothes }) => {
           slidesPerView={2}
           loop={true}
           breakpoints={{
-            640: { slidesPerView: 2 },
+            640: { slidesPerView: 4 },
             1024: { slidesPerView: 6 },
           }}
           className="!px-4 !py-8"
@@ -90,7 +90,7 @@ const FeaturedBrands = ({ Clothes }) => {
           {products.map((product) => (
             <SwiperSlide key={product.id}>
               <div className="bg-[#2a303c] rounded-lg relative">
-                <div className="relative h-[100px] lg:h-[200px]">
+                <div className="relative h-[120px] md:h-[150px] lg:h-[200px]">
                   <Swiper
                     modules={[Autoplay, A11y]}
                     autoplay={{

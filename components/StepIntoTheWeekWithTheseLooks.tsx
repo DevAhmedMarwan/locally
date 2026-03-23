@@ -72,7 +72,7 @@ const products = [
 
 const StepIntoTheWeekWithTheseLooks = () => {
   return (
-    <div className="relative !mb-10">
+    <div className="relative !pb-10 lg:!mb-10">
       {/* Title */}
       <div className="flex justify-between items-center !px-4 lg:!px-2 !mb-4">
         <h1 className="text-xl text-blue-300 font-extrabold">
@@ -100,17 +100,17 @@ const StepIntoTheWeekWithTheseLooks = () => {
         slidesPerGroup={1}
         loop={false}
         breakpoints={{
-          0: { slidesPerView: 1 },
+          0: { slidesPerView: 2 },
           640: { slidesPerView: 2 },
           1024: { slidesPerView: 4 },
         }}
-        className="px-4 py-6"
+        className=""
       >
         {products.map((product) => (
           <SwiperSlide key={product.id}>
             <div className="flex flex-col gap-3">
               {/* الصورة */}
-              <div className="h-[200px] lg:h-[455px]">
+              <div className="h-[300px] md:h-[550px] lg:h-[455px]">
                 <Swiper
                   modules={[Autoplay, A11y]}
                   autoplay={{

@@ -6,7 +6,7 @@ const WomenPage = () => {
         Women
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#2a303c]">
-        <div className="bg-[#2a303c] dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+        <div className="bg-[#2a303c] rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
           <div className="h-48 relative overflow-hidden">
             <img
               src="https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/096e8f28-ed5c-46b4-c93e-a0f164cec700/public"
@@ -19,7 +19,7 @@ const WomenPage = () => {
             <h2 className="text-xl font-semibold text-white dark:text-white !mb-3">
               All Products
             </h2>
-            <button className="text-blue-600 dark:text-primary-400 font-medium hover:underline">
+            <button className="text-blue-600 font-medium hover:!underline cursor-pointer">
               {" "}
               View{" "}
             </button>
@@ -38,7 +38,7 @@ const WomenPage = () => {
             <h2 className="text-xl font-semibold text-white dark:text-white !mb-3">
               Hoodies
             </h2>
-            <button className="text-blue-600 dark:text-primary-400 font-medium hover:underline">
+            <button className="text-blue-600 dark:text-primary-400 font-medium hover:!underline cursor-pointer">
               {" "}
               View{" "}
             </button>
@@ -57,7 +57,7 @@ const WomenPage = () => {
             <h2 className="text-xl font-semibold text-white dark:text-white !mb-3">
               Crewneck
             </h2>
-            <button className="text-blue-600 dark:text-primary-400 font-medium hover:underline">
+            <button className="text-blue-600 dark:text-primary-400 font-medium hover:!underline cursor-pointer">
               {" "}
               View{" "}
             </button>
@@ -76,7 +76,7 @@ const WomenPage = () => {
             <h2 className="text-xl font-semibold text-white dark:text-white !mb-3">
               Knit Wear
             </h2>
-            <button className="text-blue-600 dark:text-primary-400 font-medium hover:underline">
+            <button className="text-blue-600 dark:text-primary-400 font-medium hover:!underline cursor-pointer">
               {" "}
               View{" "}
             </button>
@@ -95,7 +95,7 @@ const WomenPage = () => {
             <h2 className="text-xl font-semibold text-white dark:text-white !mb-3">
               Women Wear
             </h2>
-            <button className="text-blue-600 dark:text-primary-400 font-medium hover:underline">
+            <button className="text-blue-600 dark:text-primary-400 font-medium hover:!underline cursor-pointer">
               {" "}
               View{" "}
             </button>
@@ -114,7 +114,7 @@ const WomenPage = () => {
             <h2 className="text-xl font-semibold text-white dark:text-white !mb-3">
               Pants
             </h2>
-            <button className="text-blue-600 dark:text-primary-400 font-medium hover:underline">
+            <button className="text-blue-600 dark:text-primary-400 font-medium hover:!underline cursor-pointer">
               {" "}
               View{" "}
             </button>
@@ -133,7 +133,7 @@ const WomenPage = () => {
             <h2 className="text-xl font-semibold text-white dark:text-white !mb-3">
               Jackets
             </h2>
-            <button className="text-blue-600 dark:text-primary-400 font-medium hover:underline">
+            <button className="text-blue-600 dark:text-primary-400 font-medium hover:!underline cursor-pointer">
               {" "}
               View{" "}
             </button>
@@ -152,7 +152,7 @@ const WomenPage = () => {
             <h2 className="text-xl font-semibold text-white dark:text-white !mb-3">
               Tops
             </h2>
-            <button className="text-blue-600 dark:text-primary-400 font-medium hover:underline">
+            <button className="text-blue-600 dark:text-primary-400 font-medium hover:!underline cursor-pointer">
               {" "}
               View{" "}
             </button>
@@ -171,7 +171,7 @@ const WomenPage = () => {
             <h2 className="text-xl font-semibold text-white dark:text-white !mb-3">
               Shoes
             </h2>
-            <button className="text-blue-600 dark:text-primary-400 font-medium hover:underline">
+            <button className="text-blue-600 dark:text-primary-400 font-medium hover:!underline cursor-pointer">
               {" "}
               View{" "}
             </button>
@@ -190,7 +190,7 @@ const WomenPage = () => {
             <h2 className="text-xl font-semibold text-white dark:text-white !mb-3">
               Cosmetics{" "}
             </h2>
-            <button className="text-blue-600 dark:text-primary-400 font-medium hover:underline">
+            <button className="text-blue-600 dark:text-primary-400 font-medium hover:!underline cursor-pointer">
               {" "}
               View{" "}
             </button>
@@ -209,7 +209,7 @@ const WomenPage = () => {
             <h2 className="text-xl font-semibold text-white dark:text-white !mb-3">
               Bags
             </h2>
-            <button className="text-blue-600 dark:text-primary-400 font-medium hover:underline">
+            <button className="text-blue-600 dark:text-primary-400 font-medium hover:!underline cursor-pointer">
               {" "}
               View{" "}
             </button>
@@ -228,7 +228,7 @@ const WomenPage = () => {
             <h2 className="text-xl font-semibold text-white dark:text-white !mb-3">
               Caps
             </h2>
-            <button className="text-blue-600 dark:text-primary-400 font-medium hover:underline">
+            <button className="text-blue-600 dark:text-primary-400 font-medium hover:!underline cursor-pointer">
               {" "}
               View{" "}
             </button>
