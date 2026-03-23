@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <header className="w-full bg-[#2060d3]">
             {/* Top Bar */}
-            <div className="mx-auto flex justify-between items-center h-[64px] !px-4 md:!px-8 lg:!px-16 lg:justify-center lg:gap-6">
+            <div className="mx-auto flex justify-between items-center h-[64px] !px-4 md:!px-8 lg:!px-16 lg:justify-center lg:gap-10">
 
                 {/* Logo */}
                 <Link href="/">
@@ -45,7 +45,7 @@ const Header = () => {
                     <input
                         type="text"
                         placeholder="Search"
-                        className="w-[360px] border rounded-md !pl-8 !py-1.5"
+                        className="w-[360px] lg:w-[120px] xl:w-[360px] border rounded-md !pl-8 !py-1.5"
                     />
                 </div>
 
@@ -55,7 +55,7 @@ const Header = () => {
                         Login
                     </Link>
                     <Link
-                        href="/login"
+                        href="/register"
                         className="!px-2 !py-2 !text-white hover:bg-gray-400 rounded-md font-extrabold transition"
                     >
                         Register
@@ -152,14 +152,14 @@ const Header = () => {
                 </div>
             </div>
             <div className="w-full bg-[#6292e7]">
-                <div className="h-[48px] mx-auto !px-4 overflow-x-scroll md:!px-8 lg:!px-20 lg:overflow-x-hidden flex items-center">
+                <div className="h-[48px] !px-[10px] !px-0 md:!px-2 lg:!px-12 xl:!mx-[120px] overflow-x-scroll lg:overflow-x-hidden flex items-center">
                     <div className="flex items-center gap-1">
-                        <Link href="/allProducts" className="!px-3 !py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap !text-white/90 hover:!text-white hover:bg-white/10">All Products</Link>
-                        <Link href="/newIn" className="!px-3 !py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap !text-white/90 hover:!text-white hover:bg-white/10">New In</Link>
-                        <Link href="/bestSellers" className="!px-3 !py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap !text-white/90 hover:!text-white hover:bg-white/10">Best Sellers</Link>
-                        <Link href="/brands" className="!px-3 !py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap !text-white/90 hover:!text-white hover:bg-white/10">Brands</Link>
-                        <Link href="/weeklyLooks" className="!px-3 !py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap !text-white/90 hover:!text-white hover:bg-white/10">Weekly Looks</Link>
-                        <Link href="/ourStores" className="!px-3 !py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap !text-white/90 hover:!text-white hover:bg-white/10">Our Stores</Link>
+                        <Link href="/allProducts" className="!px-3 !py-2 rounded-md !text-sm font-medium transition-colors whitespace-nowrap !text-white/90 hover:!text-white hover:bg-white/10">All Products</Link>
+                        <Link href="/newIn" className="!px-3 !py-2 rounded-md !text-sm font-medium transition-colors whitespace-nowrap !text-white/90 hover:!text-white hover:bg-white/10">New In</Link>
+                        <Link href="/bestSellers" className="!px-3 !py-2 rounded-md !text-sm font-medium transition-colors whitespace-nowrap !text-white/90 hover:!text-white hover:bg-white/10">Best Sellers</Link>
+                        <Link href="/brands" className="!px-3 !py-2 rounded-md !text-sm font-medium transition-colors whitespace-nowrap !text-white/90 hover:!text-white hover:bg-white/10">Brands</Link>
+                        <Link href="/weeklyLooks" className="!px-3 !py-2 rounded-md !text-sm font-medium transition-colors whitespace-nowrap !text-white/90 hover:!text-white hover:bg-white/10">Weekly Looks</Link>
+                        <Link href="/ourStores" className="!px-3 !py-2 rounded-md !text-sm font-medium transition-colors whitespace-nowrap !text-white/90 hover:!text-white hover:bg-white/10">Our Stores</Link>
                     </div>
                 </div>
             </div>
