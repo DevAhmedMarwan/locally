@@ -7,8 +7,8 @@ import {
   DropdownMenuRadioGroup,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
-import { Button } from "./ui/button";
+} from "../ui/dropdown-menu";
+import { Button } from "../ui/button";
 import { MdKeyboardArrowDown } from "react-icons/md";
 const Footer = () => {
   return (
@@ -48,7 +48,9 @@ const Footer = () => {
                     className="flex items-center !px-3 !py-2 text-sm font-medium transition-colors rounded-md text-white hover:text-white/90 bg-white/10 hover:bg-white/20"
                   >
                     <span>English</span>
-                    <span className=""><MdKeyboardArrowDown /></span>
+                    <span className="">
+                      <MdKeyboardArrowDown />
+                    </span>
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-32 p-2">
@@ -101,7 +103,8 @@ const Footer = () => {
                 <ul className="flex flex-col gap-2 !py-3 text-white/80 text-sm">
                   <li>
                     <Link
-                      href={"#"} font-bold
+                      href={"#"}
+                      font-bold
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       Brands
