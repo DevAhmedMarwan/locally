@@ -30,7 +30,7 @@ const CarouselPage = () => {
       >
         <SwiperSlide className="relative">
           <img
-            src="https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/14514bf4-5e58-4d45-835f-28938838d300/public"
+            src="https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/c89d01a7-a93e-43d8-9747-4045cce53100/public"
             alt="slide 1"
             className="w-full h-[280px] sm:h-[300px] md:h-[500px] lg:h-[600px] object-center"
           />
@@ -46,7 +46,7 @@ const CarouselPage = () => {
 
         <SwiperSlide className="relative">
           <img
-            src="https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/36586cbb-4805-446a-28f1-adf938568500/public"
+            src="https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/767bd719-422a-4c35-0d7d-5cb25f32d200/public"
             alt="slide 2"
             className="w-full h-[280px] sm:h-[300px] md:h-[500px] lg:h-[600px] object-center"
           />

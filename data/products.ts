@@ -180,4 +180,17 @@ export const pages = [
     paragraph:
       "DDiscover all our featured brands and find your favorite products",
   },
+  {
+    id: 5,
+    type: "weeklylooks",
+    heading: "Tuesday",
+    paragraph: "Step into the week with these curated looks",
+  },
+  {
+    id: 6,
+    type: "OurStores",
+    heading: "Our Stores",
+    paragraph:
+      "Find a local store near you. Experience our collections in person and get personalized styling advice from our team.",
+  },
 ];
