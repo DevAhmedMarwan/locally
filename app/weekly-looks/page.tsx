@@ -1,4 +1,4 @@
-import { pages, products } from "@/data/products";
+import { pages } from "@/data/products";
 import ProductWeeklyLooks from "@/components/ProductWeeklyLooks";
 import StepIntoTheWeekWithTheseLooks from "@/components/StepIntoTheWeekWithTheseLooks";
 const WeeklyLooksPage = () => {
