@@ -5,30 +5,22 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 
 type Props = {
-  params: Promise<{
-    type: string;
-    slug: string;
-  }>;
+  params: Promise<{ type: string; slug: string }>;
 };
 
 export default async function Page({ params }: Props) {
   const { type, slug } = await params;
 
-  // هل ده page (all-products) ولا sub (hoodies)
   const pageData = data?.[type]?.[slug];
 
   let finalData;
   let finalProducts;
 
   if (pageData) {
-    // ده page عادي
     finalData = pageData;
     finalProducts = pageData.products;
   } else {
-    // ده sub category
-    finalProducts = products.filter(
-      (p: any) => p.category === slug
-    );
+    finalProducts = products.filter((p: any) => p.category === slug);
 
     finalData = {
       heading: `${type} - ${slug}`,
@@ -45,8 +37,7 @@ export default async function Page({ params }: Props) {
       <div className="bg-gray-800 border-b border-gray-700">
         <div className="!max-w-7xl !mx-auto !px-4 sm:!px-6 lg:!px-8 !py-3">
           <div role="presentation">
-            <Breadcrumbs aria-label="breadcrumb">
-            <h1>ahmed</h1>
+            <Breadcrumbs aria-label="breadcrumb" className="!text-gray-400">
               <Link
                 underline="hover"
                 href="/"
@@ -54,6 +45,7 @@ export default async function Page({ params }: Props) {
               >
                 Home
               </Link>
+
               <Link
                 underline="hover"
                 href={`/category/${type}`}
@@ -61,6 +53,7 @@ export default async function Page({ params }: Props) {
               >
                 {type}
               </Link>
+
               <Link
                 underline="hover"
                 href="#"
