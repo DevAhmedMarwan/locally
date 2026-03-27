@@ -28,7 +28,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-4 !mb-4">
               <Link
-                href={"#"}
+                href={""}
                 className="!p-2 rounded text-white hover:bg-white/20 transition-colors cursor-pointer"
               >
                 <FaFacebook className="h-5 w-5" />
@@ -72,7 +72,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-2 !py-3 text-white/80 text-sm">
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/category/men"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       Men
@@ -80,7 +80,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/category/women"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       Women
@@ -88,7 +88,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/category/kids"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       Kids
@@ -103,7 +103,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-2 !py-3 text-white/80 text-sm">
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/brands"}
                       font-bold
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
@@ -112,7 +112,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/new-in"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       New In
@@ -120,7 +120,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/best-sellers"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       Best Sellers
@@ -135,7 +135,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-2 !py-3 text-white/80 text-sm">
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/orders-shipping"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       Orders & Shipping
@@ -143,7 +143,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/returns-refunds"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       Returns & Refunds
@@ -151,7 +151,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/faqs"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       FAQs
@@ -159,7 +159,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/policies"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       Policies
@@ -174,7 +174,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-2 !py-3 text-white/80 text-sm">
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/about-us"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       About Us
@@ -182,7 +182,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/contact-us"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       Contact Us
@@ -190,7 +190,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/our-stores"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       Our Stores
@@ -198,10 +198,10 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href={"#"}
+                      href={"/weekly-looks"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
-                      Weekly Look
+                      Weekly Looks
                     </Link>
                   </li>
                 </ul>
@@ -213,7 +213,7 @@ const Footer = () => {
           <p className="">
             "Copy Rights 2025 ©. All Rights Reserved - Powered By"
             <Link
-              href={"#"}
+              href={"https://teleoceans.com"}
               className="text-white hover:text-gray-300 underline transition-colors"
             >
               Teleoceans.com
