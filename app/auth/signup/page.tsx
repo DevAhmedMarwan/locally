@@ -31,18 +31,18 @@ const RegisterPage = () => {
             className="w-full h-full object-cover brightness-50"
           />
         </div>
-        <div className="relative z-10 max-w-lg !mb-10">
-          <h1 className="text-4xl lg:text-5xl font-extrabold text-white leading-tight !mb-6 font-geist-sans">
-            Locally – Your Go-To Shopping Destination
+        <div className="relative z-10 !mb-10">
+          <h1 className="text-4xl lg:text-4xl font-extrabold text-white leading-tight !mb-6 font-geist-sans">
+            Locally – Your Go-To Shopping <br /> Destination
           </h1>
-          <p className="text-white/90 text-lg !mb-6 leading-relaxed">
+          <p className="text-white/90 text-xl !mb-6 leading-relaxed">
             From everyday fashion and lifestyle to trusted local and global
-            brands, Locally brings everything you need into one seamless
+            brands, <br /> Locally brings everything you need into one seamless
             platform.
           </p>
           <p className="text-white/90 text-lg leading-relaxed">
             Shop with confidence, discover exclusive deals, and enjoy a smarter
-            way to shop — all designed around you.
+            way to <br /> shop — all designed around you.
           </p>
         </div>
       </div>
