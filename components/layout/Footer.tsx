@@ -174,7 +174,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-2 !py-3 text-white/80 text-sm">
                   <li>
                     <Link
-                      href={"/about-us"}
+                      href={"/about"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       About Us
