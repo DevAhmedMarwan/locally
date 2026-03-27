@@ -1,5 +1,5 @@
 import ProductCard from "@/components/ProductCard";
-import { data } from "@/data/productwomen";
+import { data, datasubcategory } from "@/data/productwomen";
 import { products } from "@/data/products";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
@@ -11,7 +11,7 @@ type Props = {
 export default async function Page({ params }: Props) {
   const { type, slug } = await params;
 
-  const pageData = data?.[type]?.[slug];
+  const pageData = (data as any)?.[type]?.[slug] ?? (datasubcategory as any)?.[type]?.[slug];
 
   let finalData;
   let finalProducts;
