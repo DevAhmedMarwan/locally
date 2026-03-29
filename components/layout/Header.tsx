@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <header className="w-full bg-[#2060d3]">
       {/* Top Bar */}
-      <div className="mx-auto flex justify-between items-center h-[64px] !px-4 md:!px-8 lg:!px-16 lg:justify-center lg:gap-10">
+      <div className="!mx-auto flex justify-between items-center h-[64px] !px-4 md:!px-8 lg:!px-16 lg:justify-center lg:gap-10">
         {/* Logo */}
         <Link href="/">
           <img
@@ -207,8 +207,10 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+
       <div className="w-full bg-[#6292e7]">
-        <div className="h-[48px] !px-[10px] !px-0 md:!px-2 lg:!px-12 xl:!mx-[120px] overflow-x-scroll lg:overflow-x-hidden flex items-center">
+        <div className="h-[48px] !max-w-7xl !mx-auto !px-2 md:!px-4 lg:!px-14 overflow-x-scroll lg:overflow-x-hidden flex items-center">
           <div className="flex items-center gap-1">
             <Link
               href={
@@ -263,6 +265,8 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+
 
       {/* Cart Dropdown */}
       {isCartOpen && (
