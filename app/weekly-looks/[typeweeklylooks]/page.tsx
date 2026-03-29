@@ -1,8 +1,19 @@
-import { pages } from "@/data/products";
 import ProductWeeklyLooks from "@/components/ProductWeeklyLooks";
 import StepIntoTheWeekWithTheseLooks from "@/components/StepIntoTheWeekWithTheseLooks";
-const WeeklyLooksPage = () => {
-  const WeeklyLooks = pages.find((p) => p.type === "weeklylooks");
+import { WeeklyLooks } from "@/data/productweeklylooks";
+
+const WeeklyLooksPage = async ({params}: {params: Promise<{typeweeklylooks: string}>}) => {
+  const { typeweeklylooks } = await params;
+  const dayData = WeeklyLooks[typeweeklylooks as keyof typeof WeeklyLooks];
+
+  if (!dayData) {
+    return (
+      <div className="min-h-screen bg-gray-900 text-white text-center pt-20">
+        Day of the week not found.
+      </div>
+    );
+  }
+
   return (
     <main>
       <section className="bg-gray-800 min-h-screen">
@@ -10,10 +21,10 @@ const WeeklyLooksPage = () => {
           <div className="!max-w-7xl !mx-auto !px-4 sm:!px-6 lg:!px-8 text-center">
             <div>
               <h1 className="text-2xl sm:text-4xl font-bold text-white !mb-2">
-                {WeeklyLooks?.heading}
+                {dayData.heading}
               </h1>
               <p className="text-lg font-bold text-gray-400 dark:text-gray-400">
-                {WeeklyLooks?.paragraph}
+                {dayData.paragraph}
               </p>
             </div>
           </div>
@@ -23,8 +34,8 @@ const WeeklyLooksPage = () => {
             <div className="lg:col-span-1">
               <div className="relative h-[600px] rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
                 <img
-                  src="https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/aa27b8f8-583b-4c45-b129-5455fc4ed000/public"
-                  alt=""
+                  src={dayData.mainImage}
+                  alt={dayData.heading}
                   className="w-full h-full object-cover"
                 />
               </div>

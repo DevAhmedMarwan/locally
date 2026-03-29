@@ -198,7 +198,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href={"/weekly-looks"}
+                      href={"/weekly-looks/saturday"}
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       Weekly Looks

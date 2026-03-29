@@ -249,7 +249,7 @@ const Header = () => {
                   Brands
                 </Link>
                 <Link
-                  href="/weekly-looks"
+                  href="/weekly-looks/saturday"
                   className="!px-3 !py-2 rounded-md !text-sm font-medium transition-colors whitespace-nowrap !text-white/90 hover:!text-white hover:bg-white/10"
                 >
                   Weekly Looks

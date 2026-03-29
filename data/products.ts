@@ -182,12 +182,6 @@ export const pages = [
   },
   {
     id: 5,
-    type: "weeklylooks",
-    heading: "Tuesday",
-    paragraph: "Step into the week with these curated looks",
-  },
-  {
-    id: 6,
     type: "OurStores",
     heading: "Our Stores",
     paragraph:
