@@ -4,6 +4,7 @@ import { Autoplay, A11y, Navigation } from "swiper/modules";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
+import Link from "next/link";
 const products = [
   {
     id: 1,
@@ -51,7 +52,7 @@ const products = [
       "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/77518025-c829-43fe-c7c7-cbd8f65c9c00/public",
   },
 ];
-const FeaturedBrands = ({ Clothes }) => {
+const FeaturedBrands = ({ Clothes , pathname }) => {
   return (
     <div>
       <div className="relative">
@@ -59,9 +60,9 @@ const FeaturedBrands = ({ Clothes }) => {
           <h1 className="!text-lg text-blue-300 font-extrabold !text-xl">
             {Clothes}
           </h1>
-          <button className="!text-sm !text-blue-300 hover:!text-blue-700 font-medium transition cursor-pointer">
+          <Link href={{pathname}} className="!text-sm !text-blue-300 hover:!text-blue-700 font-medium transition cursor-pointer">
             View All
-          </button>
+          </Link>
         </div>
 
         <button className="featured-prev absolute left-7 top-1/2 -translate-y-1/2 z-20 bg-gray-200/60 !p-2 !text-gray-600 rounded-full hover:bg-black hover:!text-white hover:scale-125 cursor-pointer transition">

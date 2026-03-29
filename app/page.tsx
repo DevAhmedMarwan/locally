@@ -10,13 +10,13 @@ const HomePage = () => {
         <CarouselPage />
       </section>
       <section className="w-full mx-auto !px-3 !pt-3 lg:!py-4 lg:!px-10 xl:!px-30 bg-gray-800">
-        <BestSellers Clothes={"Best Sellers"} />
+        <BestSellers Clothes={"Best Sellers"} pathname={"/best-sellers"} />
       </section>
       <section className="w-full mx-auto !px-3 !pt-3 lg:!py-4 lg:!px-10 xl:!px-30 bg-gray-800">
-        <FeaturedBrands Clothes={"Featured Brands"} />
+        <FeaturedBrands Clothes={"Featured Brands"} pathname={"/brands"} />
       </section>
       <section className="w-full mx-auto !px-3 !pt-3 lg:!py-4 lg:!px-10 xl:!px-30 bg-gray-800">
-        <BestSellers Clothes={"New In"} />
+        <BestSellers Clothes={"New In"} pathname={"/new-in"}/>
       </section>
       <section className="w-full mx-auto !px-3 !pt-3 lg:!py-4 lg:!px-10 xl:!px-30 bg-gray-800">
         <FeaturedCollection />
