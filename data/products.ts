@@ -152,6 +152,106 @@ export const products = [
   },
 ];
 
+export const productsbrands = [
+  {
+    id: 1,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/77518025-c829-43fe-c7c7-cbd8f65c9c00/public",
+  },
+  {
+    id: 2,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/8eab7166-cd85-4313-3a90-01c93b916a00/public",
+  },
+  {
+    id: 3,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/77518025-c829-43fe-c7c7-cbd8f65c9c00/public",
+  },
+  {
+    id: 4,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/8eab7166-cd85-4313-3a90-01c93b916a00/public",
+  },
+  {
+    id: 5,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/8eab7166-cd85-4313-3a90-01c93b916a00/public",
+  },
+  {
+    id: 6,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/77518025-c829-43fe-c7c7-cbd8f65c9c00/public",
+  },
+  {
+    id: 7,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/8eab7166-cd85-4313-3a90-01c93b916a00/public",
+  },
+  {
+    id: 8,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/8eab7166-cd85-4313-3a90-01c93b916a00/public",
+  },
+  {
+    id: 9,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/77518025-c829-43fe-c7c7-cbd8f65c9c00/public",
+  },
+];
+
+export const productsStepIntoTheWeekWithTheseLooks = [
+  {
+    id: 1,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/aa27b8f8-583b-4c45-b129-5455fc4ed000/public",
+    days: "Saturday",
+    href: "/weekly-looks/saturday",
+  },
+  {
+    id: 2,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/cf0eda05-35da-497a-f26e-23aef0f92e00/public",
+    days: "Sunday",
+    href: "/weekly-looks/sunday",
+  },
+  {
+    id: 3,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/df0f83c5-0195-4cc3-3186-9578fdc9e300/public",
+    days: "Monday",
+    href: "/weekly-looks/monday",
+  },
+  {
+    id: 4,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/a5ba978c-a4c9-49cc-c7b7-5851dd305000/public",
+    days: "Tuesday",
+    href: "/weekly-looks/tuesday",
+  },
+  {
+    id: 5,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/935f080d-0e80-4238-d86d-39440f313500/public",
+    days: "Wednesday",
+    href: "/weekly-looks/wednesday",
+  },
+  {
+    id: 6,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/aa27b8f8-583b-4c45-b129-5455fc4ed000/public",
+    days: "Thursday",
+    href: "/weekly-looks/thursday",
+  },
+  {
+    id: 7,
+    imageFront:
+      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/cf0eda05-35da-497a-f26e-23aef0f92e00/public",
+    days: "Friday",
+    href: "/weekly-looks/friday",
+  },
+];
+
 export const pages = [
   {
     id: 1,

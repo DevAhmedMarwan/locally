@@ -7,58 +7,8 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
 import Link from "next/link";
+import { productsStepIntoTheWeekWithTheseLooks } from "@/data/products";
 
-const products = [
-  {
-    id: 1,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/aa27b8f8-583b-4c45-b129-5455fc4ed000/public",
-    days: "Saturday",
-    href: "/weekly-looks/saturday",
-  },
-  {
-    id: 2,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/cf0eda05-35da-497a-f26e-23aef0f92e00/public",
-    days: "Sunday",
-    href: "/weekly-looks/sunday",
-  },
-  {
-    id: 3,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/df0f83c5-0195-4cc3-3186-9578fdc9e300/public",
-    days: "Monday",
-    href: "/weekly-looks/monday",
-  },
-  {
-    id: 4,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/a5ba978c-a4c9-49cc-c7b7-5851dd305000/public",
-    days: "Tuesday",
-    href: "/weekly-looks/tuesday",
-  },
-  {
-    id: 5,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/935f080d-0e80-4238-d86d-39440f313500/public",
-    days: "Wednesday",
-    href: "/weekly-looks/wednesday",
-  },
-  {
-    id: 6,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/aa27b8f8-583b-4c45-b129-5455fc4ed000/public",
-    days: "Thursday",
-    href: "/weekly-looks/thursday",
-  },
-  {
-    id: 7,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/cf0eda05-35da-497a-f26e-23aef0f92e00/public",
-    days: "Friday",
-    href: "/weekly-looks/friday",
-  },
-];
 
 const StepIntoTheWeekWithTheseLooks = () => {
   return (
@@ -96,7 +46,7 @@ const StepIntoTheWeekWithTheseLooks = () => {
         }}
         className=""
       >
-        {products.map((product) => (
+        {productsStepIntoTheWeekWithTheseLooks.map((product) => (
           <SwiperSlide key={product.id}>
             <div className="flex flex-col gap-3">
               {/* الصورة */}

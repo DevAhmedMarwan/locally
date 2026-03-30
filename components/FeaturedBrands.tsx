@@ -5,53 +5,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
 import Link from "next/link";
-const products = [
-  {
-    id: 1,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/77518025-c829-43fe-c7c7-cbd8f65c9c00/public",
-  },
-  {
-    id: 2,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/8eab7166-cd85-4313-3a90-01c93b916a00/public",
-  },
-  {
-    id: 3,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/77518025-c829-43fe-c7c7-cbd8f65c9c00/public",
-  },
-  {
-    id: 4,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/8eab7166-cd85-4313-3a90-01c93b916a00/public",
-  },
-  {
-    id: 5,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/8eab7166-cd85-4313-3a90-01c93b916a00/public",
-  },
-  {
-    id: 6,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/77518025-c829-43fe-c7c7-cbd8f65c9c00/public",
-  },
-  {
-    id: 7,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/8eab7166-cd85-4313-3a90-01c93b916a00/public",
-  },
-  {
-    id: 8,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/8eab7166-cd85-4313-3a90-01c93b916a00/public",
-  },
-  {
-    id: 9,
-    imageFront:
-      "https://imagedelivery.net/-C_C_oAtDrYq1E-MmtOfiw/77518025-c829-43fe-c7c7-cbd8f65c9c00/public",
-  },
-];
+import { productsbrands } from "@/data/products";
 const FeaturedBrands = ({ Clothes , pathname }) => {
   return (
     <div>
@@ -88,7 +42,7 @@ const FeaturedBrands = ({ Clothes , pathname }) => {
           }}
           className="!px-4 !py-8"
         >
-          {products.map((product) => (
+          {productsbrands.map((product) => (
             <SwiperSlide key={product.id}>
               <Link href={`/product/${product.id}`} className="bg-[#2a303c] rounded-lg relative block">
                 <div className="relative h-[120px] md:h-[150px] lg:h-[200px]">
