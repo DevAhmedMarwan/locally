@@ -55,9 +55,12 @@ export default function BestSellers({ Clothes , pathname }) {
         >
           {products.map((product) => (
             <SwiperSlide key={product.id}>
-              <div className="bg-[#2a303c] rounded-lg relative">
+              <Link href={`/product/${product.id}`} className="bg-[#2a303c] rounded-lg relative block group">
                 <div className="relative h-[250px] lg:h-[400px]">
-                  <button className="absolute top-3 right-3 z-10 !p-2 rounded-full bg-gray-500/20 transition cursor-pointer">
+                  <button 
+                    onClick={(e) => e.preventDefault()}
+                    className="absolute top-3 right-3 z-10 !p-2 rounded-full bg-gray-500/20 transition cursor-pointer hover:bg-white/20"
+                  >
                     <FaHeart className="text-xl text-gray-500" />
                   </button>
 
@@ -138,7 +141,7 @@ export default function BestSellers({ Clothes , pathname }) {
                     ))}
                   </div>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

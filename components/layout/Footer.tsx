@@ -104,7 +104,6 @@ const Footer = () => {
                   <li>
                     <Link
                       href={"/brands"}
-                      font-bold
                       className="hover:text-white cursor-pointer transition-colors font-bold"
                     >
                       Brands

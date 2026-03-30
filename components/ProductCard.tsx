@@ -6,15 +6,20 @@ import { Autoplay, Pagination, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
+import Link from "next/link";
+
 type Props = {
   product: any;
 };
 
 const ProductCard = ({ product }: Props) => {
   return (
-    <div className="bg-[#2a303c] rounded-lg">
+    <Link href={`/product/${product.id}`} className="bg-[#2a303c] rounded-lg block relative group">
       <div className="relative h-[250px] lg:h-[400px] rounded-t-lg overflow-hidden">
-        <button className="absolute top-3 right-3 z-10 !p-2 rounded-full bg-gray-500/20 transition cursor-pointer">
+        <button 
+          onClick={(e) => e.preventDefault()}
+          className="absolute top-3 right-3 z-10 !p-2 rounded-full bg-gray-500/20 transition cursor-pointer hover:bg-white/20"
+        >
           <FaHeart className="text-xl text-gray-500" />
         </button>
 
@@ -76,7 +81,7 @@ const ProductCard = ({ product }: Props) => {
           ))}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

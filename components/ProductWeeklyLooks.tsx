@@ -7,16 +7,18 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { products } from "@/data/products";
 
+import Link from "next/link";
+
 const ProductWeeklyLooks = () => {
   return (
     <div className="relative">
       
       {/* Buttons */}
-      <button className="best-prev absolute top-1/2 left-2 -translate-y-1/2 z-20 bg-gray-200/60 !p-2 text-gray-600 rounded-full hover:bg-black hover:text-white hover:scale-110 transition">
+      <button className="best-prev absolute top-1/2 left-2 -translate-y-1/2 z-20 bg-gray-200/60 !p-2 text-gray-600 rounded-full hover:bg-black hover:text-white hover:scale-110 transition cursor-pointer">
         <FaChevronLeft />
       </button>
 
-      <button className="best-next absolute top-1/2 right-2 -translate-y-1/2 z-20 bg-gray-200/60 !p-2 text-gray-600 rounded-full hover:bg-black hover:text-white hover:scale-110 transition">
+      <button className="best-next absolute top-1/2 right-2 -translate-y-1/2 z-20 bg-gray-200/60 !p-2 text-gray-600 rounded-full hover:bg-black hover:text-white hover:scale-110 transition cursor-pointer">
         <FaChevronRight />
       </button>
 
@@ -39,13 +41,16 @@ const ProductWeeklyLooks = () => {
       >
         {products.map((product) => (
           <SwiperSlide key={product.id}>
-            <div className="bg-[#2a303c] rounded-lg relative overflow-hidden group">
+            <Link href={`/product/${product.id}`} className="bg-[#2a303c] rounded-lg relative overflow-hidden group block">
 
               {/* Image Area */}
               <div className="relative h-[250px] lg:h-[400px]">
 
                 {/* Heart */}
-                <button className="absolute top-3 right-3 z-10 !p-2 rounded-full bg-gray-500/20 hover:bg-red-500/80 transition">
+                <button 
+                  onClick={(e) => e.preventDefault()}
+                  className="absolute top-3 right-3 z-10 !p-2 rounded-full bg-gray-500/20 hover:bg-red-500/80 transition cursor-pointer"
+                >
                   <FaHeart className="text-xl text-gray-300 hover:text-white" />
                 </button>
 
@@ -135,7 +140,7 @@ const ProductWeeklyLooks = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
